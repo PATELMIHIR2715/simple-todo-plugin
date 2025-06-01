@@ -1,0 +1,151 @@
+.todo-list {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.todo-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    position: relative;
+}.todo-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.todo-button {
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+.todo-button:hover {
+    background: #45a049;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateX(5px);
+}
+
+.todo-item.completed {
+    background: #e8f5e9;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.todo-checkbox {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.todo-delete {
+    padding: 6px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.todo-delete:hover {
+    opacity: 1;
+}
+
+.todo-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-button {
+    padding: 8px 16px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-button.active {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .todo-form {
+        flex-direction: column;
+    }
+    
+    .todo-button {
+        width: 100%;
+    }
+}
+
+.delete-link {
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
